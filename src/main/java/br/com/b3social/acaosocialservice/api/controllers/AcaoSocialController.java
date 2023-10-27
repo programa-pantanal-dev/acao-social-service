@@ -24,6 +24,7 @@ import br.com.b3social.acaosocialservice.domain.services.AcaoSocialService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import br.com.b3social.acaosocialservice.api.dtos.AcaoSocialMapper;
 import br.com.b3social.acaosocialservice.api.dtos.AtualizarAcaoSocialDTO;
@@ -33,6 +34,7 @@ import jakarta.validation.Valid;
 @RestController()
 @RequestMapping(value = "/acaosocial", produces = {"application/json"})
 @Tag(name = "Ação Social - API")
+@SecurityRequirement(name = "Keycloak")
 public class AcaoSocialController {
     @Autowired
     private AcaoSocialService acaoSocialService;
