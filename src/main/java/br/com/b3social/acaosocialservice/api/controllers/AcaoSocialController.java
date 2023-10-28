@@ -93,7 +93,7 @@ public class AcaoSocialController {
 
     @GetMapping("/{id}")
     @Operation(
-        summary = "Retorna uma ação social pelo id",
+        summary = "Retorna uma ação social pelo ID",
         method = "GET"
     )
     @ApiResponse(
@@ -115,7 +115,7 @@ public class AcaoSocialController {
 
     @GetMapping("coordenador/{id}")
     @Operation(
-        summary = "Retorna uma ação social pelo coordenador",
+        summary = "Retorna uma ação social pelo CordenadorID",
         method = "GET"
     )
     @ApiResponse(
@@ -140,7 +140,7 @@ public class AcaoSocialController {
     @PutMapping("/{id}")
     @PreAuthorize("hasRole('ADMIN') || @resourceAccessService.isOwner(#id)")
     @Operation(
-        summary = "Atualiza uma ação social",
+        summary = "Atualiza uma ação social pelo ID",
         method = "PUT"
     )
     @ApiResponse(
@@ -166,7 +166,7 @@ public class AcaoSocialController {
     @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(
-        summary = "Deleta uma ação social",
+        summary = "Deleta uma ação social pelo ID",
         method = "DELETE"
     )
     @ApiResponse(
