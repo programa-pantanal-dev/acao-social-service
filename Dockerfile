@@ -10,3 +10,7 @@ RUN mvn clean install
 FROM openjdk:17-jdk-slim
 
 EXPOSE 8081
+
+COPY --from=build /target/acao-social-service-3.1.3.jar app.jar
+
+ENTRYPOINT [ "java", "-jar", "app.jar" ]
