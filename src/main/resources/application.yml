@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${DATABASE_URL} #jdbc:postgresql://localhost:5432/acaosocial-service
-    username: ${DATABASE_USERNAME} #postgres
-    password: ${DATABASE_PASSWORD} #dev123
+    url: jdbc:postgresql://localhost:5432/acaosocial-service
+    username: postgres
+    password: dev123
   security:
     oauth2:
       resourceserver:

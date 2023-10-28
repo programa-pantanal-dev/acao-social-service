@@ -114,7 +114,7 @@ public class AcaoSocialController {
 
     @GetMapping("coordenador/{id}")
     @Operation(
-        summary = "Retorna uma ação social pelo CordenadorID",
+        summary = "Retorna todas as ações sociais pelo CordenadorID",
         method = "GET"
     )
     @ApiResponse(
