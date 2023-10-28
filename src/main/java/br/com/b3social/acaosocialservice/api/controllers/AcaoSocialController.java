@@ -106,9 +106,8 @@ public class AcaoSocialController {
         content = @Content()
     )
     public ResponseEntity<RetornarAcaoSocialDTO> buscarAcaoSocialPorId(@PathVariable String id) throws Exception{
-        RetornarAcaoSocialDTO retornarAcaoSocialDTO = mapper.AcaoSocialToDto(
-            this.acaoSocialService.buscarAcaoSocialPorId(id)
-        );
+        AcaoSocial sc = this.acaoSocialService.buscarAcaoSocialPorId(id);
+        RetornarAcaoSocialDTO retornarAcaoSocialDTO = mapper.AcaoSocialToDto(sc);
 
         return new ResponseEntity<>(retornarAcaoSocialDTO, HttpStatus.OK);
     }
