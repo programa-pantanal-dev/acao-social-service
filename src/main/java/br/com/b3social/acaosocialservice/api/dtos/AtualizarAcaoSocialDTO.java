@@ -34,10 +34,10 @@ public class AtualizarAcaoSocialDTO{
     @Max(value = 5)
     private Integer nivel;
     
-    @JsonFormat(pattern="dd-MM-yyyy")
+    @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate dataInicio;
 
-    @JsonFormat(pattern="dd-MM-yyyy")
+    @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate dataTermino;
 
     @NullOrNotBlank()

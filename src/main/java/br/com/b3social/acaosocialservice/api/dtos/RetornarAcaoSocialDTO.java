@@ -21,9 +21,9 @@ public class RetornarAcaoSocialDTO {
     String resumo;
     String descricao;
     Integer nivel;
-    @JsonFormat(pattern="dd-MM-yyyy")
+    @JsonFormat(pattern="yyyy-MM-dd")
     LocalDate dataInicio;
-    @JsonFormat(pattern="dd-MM-yyyy")
+    @JsonFormat(pattern="yyyy-MM-dd")
     LocalDate dataTermino;
     String banner;
     String coordenadorId;
@@ -31,10 +31,10 @@ public class RetornarAcaoSocialDTO {
     String coordenadorEmail;
     Status status;
     String createdBy;
-    @JsonFormat(pattern="dd-MM-yyyy HH:mm:ss")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     Date createdAt;
-    @JsonFormat(pattern="dd-MM-yyyy HH:mm:ss")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     Date deletedAt;
-    @JsonFormat(pattern="dd-MM-yyyy HH:mm:ss")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     Date updatedAt;
 }
